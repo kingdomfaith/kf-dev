@@ -1,14 +1,14 @@
 *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box;backface-visibility:hidden;-webkit-backface-visibility:hidden;outline:0}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}*,:active,html{-webkit-tap-highlight-color:transparent}
-body,html{-webkit-overflow-scrolling:touch;z-index:0;font-weight:400}table,tbody,td,th,tr{font-weight:400;border-spacing:0;padding:0}tr.bold td{font-weight:700}th{text-align:left}body{font-family:sans-serif;color:#222;line-height:30px;font-size:18px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;position:relative;letter-spacing:.02rem}
+body,html{-webkit-overflow-scrolling:touch;z-index:0;font-weight:400;height:100%;}table,tbody,td,th,tr{font-weight:400;border-spacing:0;padding:0}tr.bold td{font-weight:700}th{text-align:left}body{font-family:sans-serif;color:#222;line-height:30px;font-size:18px;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;position:relative;letter-spacing:.02rem}
 .kingdomfaithchurch_icon svg{height: 3.2rem;width: 20rem;display:block;margin:20px auto;}
 .main{padding:30px}
 .flex-buttons{display:flex;align-items: center; justify-content: flex-start;flex-wrap: wrap;}
-.flex-buttons a{padding:10px 20px;background:#ddd;color:#222;text-decoration: none;margin: 0 4px 4px 0}
+.flex-buttons a{padding:10px 20px;background:#222;color:#fff;text-decoration: none;margin: 0 4px 4px 0}
 @media (max-width: 600px){
     .flex-buttons{flex-direction: column;}
     .flex-buttons a{width:100%;text-align: center;;}
 }
-
+.section{padding:30px;background:#ddd;margin:15px 30px}
 
 .menu{display: flex;  background:#ddd;}
 .menu-toggle{display:none;color: #222;text-decoration: none;padding: 10px 20px;margin:0 auto;width:100%;text-align: center;}
@@ -89,3 +89,21 @@ body,html{-webkit-overflow-scrolling:touch;z-index:0;font-weight:400}table,tbody
   clear: both;
   width: 100%;
 }
+
+
+footer{
+    display:flex;
+    width:100%;
+    margin-top:auto;
+    justify-content: space-between;
+    background:#222;
+    color:#fff;
+    padding:30px;
+}
+footer ul{list-style: none;}
+footer ul li{display:block}
+@media (max-width: 600px){
+    footer{flex-direction: column;}
+}
+
+body{display: flex;flex-direction: column;justify-content: flex-start;}
