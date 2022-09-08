@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Kingdom Faith Church - Home</title>
+        <title>Kingdom Faith Church - Horsham Congregation</title>
         <link href="global.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".menu-toggle").click(function(e){
+                    e.preventDefault()
+                    if ($(".menu").hasClass("active")) {
+                        $(".menu").removeClass("active");
+                    }
+                    else {
+                        $(".menu").addClass("active");
+                    }
+                  });
+            });
+        </script>
     </head>
 <body>
 
@@ -39,21 +53,47 @@
         </svg>
     </a>
 
+    <nav role="navigation" class="menu">
+        <a href="#" class="menu-toggle">Menu</a>
+        <ul>
+          <li><a href="#">I'm new</a></li>
+          <li><a href="#">Sundays</a>
+            <ul class="dropdown">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Children</a></li>
+              <li><a href="#">Youth</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Connect</a>
+            <ul class="dropdown">
+              <li><a href="#">Small groups</a></li>
+              <li><a href="#">Parents</a></li>
+              <li><a href="#">Join a team</a></li>
+            </ul>
+          </li>
+          <li><a href="#">What's on</a>
+            <ul class="dropdown">
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">The HUB</a></li>
+              <li><a href="#">Little Builders</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a>
+            <ul class="dropdown">
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Beliefs</a></li>
+                <li><a href="#">Leadership</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Podcsts</a></li>
+          <li><a href="#">myKF</a></li>
+        </ul>
+    </nav>
+
     <div class="main">
-        <h3>Hi and welcome to Kingdom Faith Church</h3>
-        <p>We're one church which meets in many locations around West Sussex and the UK. To find out more choose one of our locations from the options below.</p>
+        <h3>Horsham Congregation</h3>
         <br>
-        <div class="flex-buttons">
-            <a href="horsham.html">Horsham</a>
-            <a href="burgesshill.html">Burgess Hill</a>
-            <a href="crawley.html">Crawley</a>
-            <a href="worthing.html">Worthing</a>
-            <a href="london.html">London</a>
-            <a href="scarborough.html">Scarborough</a>
-            <a href="taunton.html">Taunton</a>
-        </div>
-
-
     </div>
 
 </body>
