@@ -65,6 +65,8 @@ body,html{-webkit-overflow-scrolling:touch;z-index:0;font-weight:400;height:100%
         opacity: 1;
         display: block;
     }
+    .menu ul li a{display:flex;align-items: center;justify-content: center;}
+    .menu ul li a svg{margin-left:6px;height:10px;opacity:0.6}
 
 }
 
@@ -74,7 +76,8 @@ body,html{-webkit-overflow-scrolling:touch;z-index:0;font-weight:400;height:100%
     .menu ul{display:none;flex-direction: column;text-align: center;}
     .menu.active ul{display:flex;width:100%}
     .menu.active ul li{width:100%}
-    .menu.active ul li a{display:block;}
+    .menu.active ul li a{display:flex;width:100%;align-items: center;justify-content: center;}
+    .menu.active ul li a svg{margin-left:6px;margin-right:-20px;height:10px;opacity:0.6}
     .menu.active ul li ul{display:none}
     .menu.active ul li:focus-within ul{display:block}
     .menu.active ul li:focus-within ul li{background:#bbb}
