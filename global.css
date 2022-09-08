@@ -12,9 +12,7 @@ body,html{-webkit-overflow-scrolling:touch;z-index:0;font-weight:400;height:100%
 
 .menu{display: flex;  background:#ddd;}
 .menu-toggle{display:none;color: #222;text-decoration: none;padding: 10px 20px;margin:0 auto;width:100%;text-align: center;}
-.menu.active .menu-toggle{
-    background: #bbb;
-}
+.menu.active .menu-toggle{background: #aaa;}
 
 .menu ul {
   background:#ddd;
@@ -66,7 +64,8 @@ body,html{-webkit-overflow-scrolling:touch;z-index:0;font-weight:400;height:100%
         display: block;
     }
     .menu ul li a{display:flex;align-items: center;justify-content: center;}
-    .menu ul li a svg{margin-left:6px;height:10px;opacity:0.6}
+    .menu ul > li a svg{margin-left:6px;height:10px;opacity:0.6}
+    .menu ul.dropdown li a{display:block;}
 
 }
 
@@ -76,11 +75,14 @@ body,html{-webkit-overflow-scrolling:touch;z-index:0;font-weight:400;height:100%
     .menu ul{display:none;flex-direction: column;text-align: center;}
     .menu.active ul{display:flex;width:100%}
     .menu.active ul li{width:100%}
+    .menu.active ul li:hover{background:#bbb}
     .menu.active ul li a{display:flex;width:100%;align-items: center;justify-content: center;}
     .menu.active ul li a svg{margin-left:6px;margin-right:-20px;height:10px;opacity:0.6}
     .menu.active ul li ul{display:none}
-    .menu.active ul li:focus-within ul{display:block}
-    .menu.active ul li:focus-within ul li{background:#bbb}
+    .menu.active ul li.dropdown-link.active{background:#bbb}
+    .menu.active ul li.dropdown-link.active ul{display:block;background: #bbb;}
+    .menu.active ul li.dropdown-link.active ul li{background: #ccc;}
+    .menu.active ul li.dropdown-link.active ul li:hover{background: #bbb;}
     .menu.active ul li ul li:hover{background:#aaa}
     .menu.active ul li{padding: 0;}
     .menu.active ul li a{padding: 10px 20px;}
